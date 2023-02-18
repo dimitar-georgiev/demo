@@ -1,0 +1,22 @@
+name: Demo Workflow
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  firstJob:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: first shell command
+        run: echo "First Shell Command"
+        shell: bash
+  lastJob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: final shell command
+        run: echo "Final Shell Command"
+        shell: bash
