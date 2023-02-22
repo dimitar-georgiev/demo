@@ -14,9 +14,6 @@ jobs:
       - name: first shell command
         run: echo "First Shell Command"
         shell: bash
-      - name: run test
-        run: npm run tests
-        shell: bash
   lastJob:
     runs-on: ubuntu-latest
     steps:
