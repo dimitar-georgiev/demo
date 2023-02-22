@@ -1,6 +1,7 @@
 name: CI Workflow
 on:
-  pull_request:
+  # pull_request:
+  push:
     branches:
       # must filter for feature/... branches
       - main
